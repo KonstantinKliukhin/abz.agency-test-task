@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+}
+
+.inputWrapper {
+  width: 100%;
+  position: relative;
+
+  &.error {
+    .input {
+      border: 1px solid var(--color-error);
+    }
+
+    .label {
+      color: var(--color-error);
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  background-color: transparent;
+  font: var(--font-main-m);
+  border: 1px solid var(--input-border-color);
+  padding: 14px 16px;
+  border-radius: 4px;
+}
+
+// changes background color after auto filling input
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 30px var(--color-bg-primary) inset !important;
+}
+
+.input:focus {
+  border: 1px solid var(--input-border-color);
+  outline: none;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4px;
+
+// input padding 14px - self padding 4px = left 10px
+  left: 10px;
+  transition: background-color 0.1s ease-in, font-size 0.1s ease-in, top 0.1s ease-in;
+  font: var(--font-main-m);
+  color: var(--color-text-tertiary);
+}
+
+.input:focus + .label, .input:not(.empty) + .label {
+  background-color: #F8F8F8;
+  font-size: var(--font-size-sm);
+  top: 0;
+}
+
+.helperText {
+  padding-left: 14px;
+}
+
+.helperTextSpace {
+  margin-top: 4px;
+  min-height: 14px;
+}
+
+
+

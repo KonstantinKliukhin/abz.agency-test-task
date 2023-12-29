@@ -1,0 +1,39 @@
+@import "appLayer/styles/mixins";
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+// sizes
+
+.m {
+  padding: 0 16px;
+
+  @include min-media(mobile-l) {
+    max-width: 704px;
+    padding: 0;
+  }
+
+  @include min-media(laptop) {
+    max-width: 904px;
+  }
+
+  @include min-media(desktop-s) {
+    max-width: 1170px;
+  }
+}
+
+.l {
+  width: 100vw;
+  padding: 0 16px;
+
+  @include min-media(desktop-m) {
+    padding: 0;
+    max-width: 1170px;
+  }
+}
+
+.screen {
+  width: 100vw;
+}

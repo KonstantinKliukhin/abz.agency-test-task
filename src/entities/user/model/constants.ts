@@ -1,0 +1,1 @@
+export const DEFAULT_USERS_LIST_COUNT = 6;

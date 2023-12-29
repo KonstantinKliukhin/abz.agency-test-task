@@ -1,3 +1,77 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "standard"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "semi": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
+    "indent": [
+      "error",
+      2,
+      {
+        "ignoredNodes": ["JSXElement", "JSXAttribute"]
+      }
+    ],
+    "space-before-function-paren": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"],
+          ["internal", "index", "parent", "sibling"]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "newlines-between": "always"
+      }
+    ],
+    "@typescript-eslint/member-delimiter-style": ["error", {
+      "multiline": {
+        "delimiter": "semi",
+        "requireLast": true
+      },
+      "singleline": {
+        "delimiter": "semi",
+        "requireLast": false
+      }
+    }],
+    "react/jsx-indent": [
+      "error",
+      2,
+      {
+        "indentLogicalExpressions": true,
+        "checkAttributes": true
+      }
+    ],
+    "react/jsx-max-props-per-line": [
+      "error",
+      { "maximum": { "single": 3, "multi": 1 } }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
+    "react/jsx-indent-props": ["error", 2],
+    "react/react-in-jsx-scope": "off",
+    "@next/next/no-img-element": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 110,
+        "ignoreComments": true,
+        "ignoreStrings": true,
+        "ignoreRegExpLiterals": true
+      }
+    ]
+  }
 }

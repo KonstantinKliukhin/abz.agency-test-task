@@ -1,0 +1,20 @@
+.loader {
+  animation: rotation 1s linear infinite;
+}
+
+// sizes
+
+.size-m {
+  width: 48px;
+  height: 48px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

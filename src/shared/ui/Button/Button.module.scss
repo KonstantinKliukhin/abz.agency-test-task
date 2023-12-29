@@ -1,0 +1,43 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+// variants
+
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  border-radius: 80px;
+
+  &:hover {
+    background-color: var(--buttom-primary-hover-bg);
+  }
+
+  &.disabled {
+    background-color: var(--buttom-primary-disabled-bg);
+    color: var(--buttom-primary-disabled-text-color);
+  }
+}
+
+// Sizes
+
+.s {
+  width: 100px;
+  height: 34px;
+  font: var(--font-main-m);
+}
+
+.m {
+  width: 120px;
+  height: 34px;
+  font: var(--font-main-m);
+}

@@ -1,0 +1,20 @@
+@import "src/appLayer/styles/mixins";
+
+.cardsGrid {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+
+  @include min-media(mobile-l) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
+
+  @include min-media(laptop) {
+    grid-gap: 29px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

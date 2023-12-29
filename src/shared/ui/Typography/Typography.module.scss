@@ -1,0 +1,57 @@
+// size
+
+.size-sm {
+  font: var(--font-main-sm);
+  font-weight: 400;
+}
+
+.size-m {
+  font: var(--font-main-m);
+  font-weight: 400;
+}
+
+.size-2xl {
+  font: var(--font-main-2xl);
+  font-weight: 400;
+}
+
+// color
+
+.primary {
+  color: var(--color-text-primary);
+}
+
+.secondary {
+  color: var(--color-text-secondary);
+}
+
+.tertiary {
+  color: var(--color-text-tertiary);
+}
+
+.error {
+  color: var(--color-error);
+}
+
+// text align
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+// ellipsis
+
+.ellipsis {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,8 @@
+.overlay :global .rc-tooltip-inner {
+  margin: 5px;
+  word-break: break-word;
+  padding: 3px 16px;
+  background-color: var(--tooltip-bg);
+  min-height: unset;
+  border-radius: 4px;
+}
