@@ -31,8 +31,10 @@ export const Hero: FC = () => {
           src={heroImage}
           className={cls.backgroundImage}
           alt="wheat and sky in the form of the flag of Ukraine"
-          width={4096}
-          height={2726}/>
+          sizes="(max-width: 1536px) 100vw, 1170px"
+          priority
+          fill
+        />
       </VStack>
     </Container>
 
