@@ -44,16 +44,17 @@
   top: 50%;
   transform: translateY(-50%);
   padding: 4px;
+  pointer-events: none;
 
 // input padding 14px - self padding 4px = left 10px
   left: 10px;
-  transition: background-color 0.1s ease-in, font-size 0.1s ease-in, top 0.1s ease-in;
+  transition: background-color 0.13s ease-in, font-size 0.13s ease-in, top 0.13s ease-in;
   font: var(--font-main-m);
   color: var(--color-text-tertiary);
 }
 
 .input:focus + .label, .input:not(.empty) + .label {
-  background-color: #F8F8F8;
+  background-color: var(--color-bg-primary);
   font-size: var(--font-size-sm);
   top: 0;
 }
