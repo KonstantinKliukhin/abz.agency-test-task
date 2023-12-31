@@ -1,9 +1,10 @@
 import clsx from 'clsx';
 import { ChangeEvent, forwardRef, InputHTMLAttributes, memo, useCallback, useId } from 'react';
 
-import cls from './FileInput.module.scss';
 import { HStack } from '../Stack/HStack/HStack';
 import { Typography } from '../Typography/Typography';
+
+import cls from './FileInput.module.scss';
 
 type HtmlInputProps = Omit<
     InputHTMLAttributes<HTMLInputElement>,

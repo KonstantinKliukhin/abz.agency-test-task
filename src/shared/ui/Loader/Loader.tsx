@@ -2,8 +2,9 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import { ComponentProps, memo } from 'react';
 
-import cls from './Loader.module.scss';
 import LoaderIcon from '../../../../public/common/loader.svg';
+
+import cls from './Loader.module.scss';
 
 type LoaderSizes = 'm';
 

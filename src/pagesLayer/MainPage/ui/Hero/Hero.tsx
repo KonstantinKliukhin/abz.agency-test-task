@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 
-import cls from './Hero.module.scss';
 import heroImage from '../../../../../public/main/hero.webp';
 import { APP_ROUTES, SECTIONS_IDS } from '@shared/constants';
 import { Button, Container, Typography, VStack } from '@shared/ui';
+
+import cls from './Hero.module.scss';
 
 export const Hero: FC = () => {
   return (

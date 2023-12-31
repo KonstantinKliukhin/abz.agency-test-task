@@ -1,7 +1,8 @@
-import { CreateUserDto } from './createUserDto';
-import { User } from './user';
 import { createUser } from '../../api/userApi/createUser/createUser';
 import { getUsers } from '../../api/userApi/getUsers/getUsers';
+
+import { CreateUserDto } from './createUserDto';
+import { User } from './user';
 
 export interface UserStoreState {
     users: User[];

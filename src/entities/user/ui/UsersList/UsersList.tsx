@@ -2,9 +2,10 @@
 import clsx from 'clsx';
 import { memo } from 'react';
 
-import cls from './UsersList.module.scss';
 import { User } from '../../model/types/user';
 import { UserCard } from '../UserCard/UserCard';
+
+import cls from './UsersList.module.scss';
 
 interface UsersListProps {
     className?: string;

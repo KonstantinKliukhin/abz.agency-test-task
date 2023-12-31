@@ -1,8 +1,9 @@
 import clsx from 'clsx';
 import { ComponentProps, HTMLAttributes, memo } from 'react';
 
-import cls from './Card.module.scss';
 import { Bg } from '../Bg/Bg';
+
+import cls from './Card.module.scss';
 
 type CardSize = 'm';
 

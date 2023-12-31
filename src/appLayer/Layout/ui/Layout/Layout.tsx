@@ -2,9 +2,10 @@ import clsx from 'clsx';
 import { Nunito } from 'next/font/google';
 import { FC, PropsWithChildren } from 'react';
 
-import cls from './Layout.module.scss';
 import { PUBLIC_ENV } from '@shared/constants';
 import { Header } from '@widgets/Header';
+
+import cls from './Layout.module.scss';
 
 const nunito = Nunito({
   subsets: ['latin'],

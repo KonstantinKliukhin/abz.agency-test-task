@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 
-import cls from './Header.module.scss';
 import LogoIcon from '../../../../../public/logo.svg';
 import { APP_ROUTES, SECTIONS_IDS } from '@shared/constants';
 import { Bg, Button, Container, HStack } from '@shared/ui';
+
+import cls from './Header.module.scss';
 
 export const Header: FC = () => {
   return (

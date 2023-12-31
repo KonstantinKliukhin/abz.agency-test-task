@@ -11,8 +11,9 @@ import {
   useState,
 } from 'react';
 
-import cls from './Avatar.module.scss';
 import DefaultAvatar from '../../../../public/common/defaultAvatar.svg';
+
+import cls from './Avatar.module.scss';
 
 type ImageProps = Omit<
     ComponentProps<typeof Image>,

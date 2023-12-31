@@ -2,11 +2,12 @@
 import { memo, useEffect } from 'react';
 import { FormProvider } from 'react-hook-form';
 
-import cls from './AddUserForm.module.scss';
 import { useAddUserForm } from '../../model/useAddUserForm/useAddUserForm';
 import { userActions } from '@entities/user';
 import { UserPosition, UserPositionSelector } from '@entities/userPosition';
 import { Button, FormFileInput, FormInput, Loader, Typography, VStack } from '@shared/ui';
+
+import cls from './AddUserForm.module.scss';
 
 interface AddUserFormProps {
     className?: string;

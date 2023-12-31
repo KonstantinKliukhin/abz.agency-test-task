@@ -1,9 +1,10 @@
 'use client';
 import { memo } from 'react';
 
-import cls from './UserCard.module.scss';
 import { User } from '../../model/types/user';
 import { AppTooltip, Avatar, Card, Typography, VStack } from '@shared/ui';
+
+import cls from './UserCard.module.scss';
 
 interface UserCardProps {
     user: User;

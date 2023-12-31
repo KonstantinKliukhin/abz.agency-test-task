@@ -1,9 +1,10 @@
-import cls from './UsersSection.module.scss';
 import { getUsers } from '@entities/user';
 import { SECTIONS_IDS } from '@shared/constants';
 import { getMessageFromError } from '@shared/lib';
 import { Container, SectionError, Typography, VStack } from '@shared/ui';
 import { UsersInfiniteList } from '@widgets/UsersInfiniteList';
+
+import cls from './UsersSection.module.scss';
 
 const INITIAL_USERS_PAGE = 1;
 const INITIAL_USERS_COUNT = 6;

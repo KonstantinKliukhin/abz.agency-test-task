@@ -11,8 +11,9 @@ import {
   useRef, useState,
 } from 'react';
 
-import cls from './Input.module.scss';
 import { Typography } from '../Typography/Typography';
+
+import cls from './Input.module.scss';
 
 type HtmlInputProps = Omit<
 InputHTMLAttributes<HTMLInputElement>,
